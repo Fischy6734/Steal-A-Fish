@@ -91,18 +91,17 @@ const SHOP_VISIBLE_COUNT = 12;
 const allItems = [
   {id:'c1', name:'Pixel Cat', rarity:'Common', price:10, incomePerSecond:0.2, image:'images/c1.png'},
   {id:'c2', name:'Smile Blob', rarity:'Common', price:12, incomePerSecond:0.25, image:'images/c2.png'},
-  {id:'c3', name:'TEST TEST TEST TEST', rarity:'Common', price:9999999999, incomePerSecond:0.2, image:'images/c1.png'},
   {id:'r1', name:'Skull Badge', rarity:'Rare', price:60, incomePerSecond:1.2, image:'images/r1.png'},
   {id:'r2', name:'Lil Ghost', rarity:'Rare', price:75, incomePerSecond:1.5, image:'images/r2.png'},
   {id:'e1', name:'Glowfox', rarity:'Epic', price:220, incomePerSecond:6, image:'images/e1.png'},
   {id:'l1', name:'Crown King', rarity:'Legendary', price:700, incomePerSecond:20, image:'images/l1.png'},
-  {id:'ev1', name:'El-Tacho', rarity:'Event', price:350, incomePerSecond:5000, image:'ev1.jpeg'},
+  {id:'te1', name:'El-Tacho', rarity:'TachoEvent', price:350, incomePerSecond:5000, image:'ev1.jpeg'},
   {id:'m1', name:'Mythic Orb', rarity:'Mythic', price:2000, incomePerSecond:70, image:'images/m1.png'},
   {id:'s1', name:'Secret Sigil', rarity:'Secret', price:5000, incomePerSecond:220, image:'images/s1.png'}
   
 ];
 
-const rarityWeights = { 'Common':60, 'Rare':22, 'Epic':10, 'Legendary':4, 'Event':0, 'Mythic':1, 'Secret':0.4 };
+const rarityWeights = { 'Common':60, 'Rare':22, 'Epic':10, 'Legendary':4, 'Event':0, 'TachoEvent':0, 'Mythic':1, 'Secret':0.4 };
 const rarityColor = { 'Common':'#6b7280','Rare':'#0ea5e9','Epic':'#7c3aed','Legendary':'#f59e0b','Event':'#06b6d4','Mythic':'#ef4444','Secret':'#f0abfc'};
 
 let state = { money:STARTING_MONEY, slots:STARTING_SLOTS, owned:[], slotPurchases:0 };
